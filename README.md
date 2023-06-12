@@ -6,7 +6,7 @@
 
 - [漏洞知识库](https://wiki.putdown.top/#/)
 
-- [情报威胁](https://github.com/futalk/threat-intelligence)
+- [情报威胁](http://blog.putdown.top/threat-intelligence/)
 
 - [steam打折信息](http://blog.putdown.top/steam-discount/discount.html)
 
