@@ -26,4 +26,6 @@
 
 - [github stars管理](https://gitstars-futalk.vercel.app/)
 
+- [在线思维导图](https://mind.putdown.top/#/)
 
+- [linux命令查询](https://blog.putdown.top/linux-command/)
