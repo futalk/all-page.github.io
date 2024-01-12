@@ -1,6 +1,6 @@
 - [博客](https://futalk.github.io/)
 
-- [RSS订阅](https://rss.putdown.top/)
+- [网安RSS订阅](https://rss.putdown.top/)
 
 - [网站导航 2.0 ](https://da.putdown.top/)
 
@@ -8,9 +8,7 @@
 
 - [linux命令搜索](https://futalk.github.io/linux-command/)
 
-- [漏洞知识库](https://wiki.putdown.top/#/) - 随缘更新
-
-- [情报威胁](http://futalk.github.io/threat-intelligence/)
+- [漏洞知识库](https://wiki.putdown.top/#/)
 
 - [steam打折信息](http://futalk.github.io/steam-discount/discount.html)
 
@@ -18,11 +16,9 @@
 
 - [反弹 shell](https://futalk.github.io/tools/reverseshellgenerator/)
 
-- [提权辅助](https://futalk.github.io/tools/peassist/)
+- [提权辅助-systeminfo](https://futalk.github.io/tools/peassist/)
 
 - [杀软识别](https://futalk.github.io/tools/avlist/)
-
-- [CVE 搜索](https://futalk.github.io/tools/cve/)
 
 - [github stars管理](https://gitstars-futalk.vercel.app/)
 
