@@ -1,4 +1,4 @@
-- [博客](https://blog.putdown.top/)
+- [博客](https://futalk.github.io/)
 
 - [RSS订阅](https://rss.putdown.top/)
 
@@ -6,26 +6,26 @@
 
 - [网站导航](https://web.putdown.top/) - 暂停更新
 
-- [linux命令搜索](https://blog.putdown.top/linux-command/)
+- [linux命令搜索](https://futalk.github.io/linux-command/)
 
 - [漏洞知识库](https://wiki.putdown.top/#/) - 随缘更新
 
-- [情报威胁](http://blog.putdown.top/threat-intelligence/)
+- [情报威胁](http://futalk.github.io/threat-intelligence/)
 
-- [steam打折信息](http://blog.putdown.top/steam-discount/discount.html)
+- [steam打折信息](http://futalk.github.io/steam-discount/discount.html)
 
-- [GoogleHacking 搜索](http://blog.putdown.top/GoogleHacking.github.io/)
+- [GoogleHacking 搜索](http://futalk.github.io/GoogleHacking.github.io/)
 
-- [反弹 shell](https://blog.putdown.top/tools/reverseshellgenerator/)
+- [反弹 shell](https://futalk.github.io/tools/reverseshellgenerator/)
 
-- [提权辅助](https://blog.putdown.top/tools/peassist/)
+- [提权辅助](https://futalk.github.io/tools/peassist/)
 
-- [杀软识别](https://blog.putdown.top/tools/avlist/)
+- [杀软识别](https://futalk.github.io/tools/avlist/)
 
-- [CVE 搜索](https://blog.putdown.top/tools/cve/)
+- [CVE 搜索](https://futalk.github.io/tools/cve/)
 
 - [github stars管理](https://gitstars-futalk.vercel.app/)
 
 - [在线思维导图](https://mind.putdown.top/#/)
 
-- [linux命令查询](https://blog.putdown.top/linux-command/)
+- [linux命令查询](https://futalk.github.io/linux-command/)
