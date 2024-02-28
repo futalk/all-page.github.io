@@ -1,4 +1,6 @@
-- [博客](https://futalk.github.io/)
+- [新-博客](https://blog.putdown.top/)
+
+- [旧版-博客](https://futalk.github.io/)
 
 - [网安RSS订阅](https://rss.putdown.top/)
 
@@ -9,8 +11,6 @@
 - [linux命令搜索](https://futalk.github.io/linux-command/)
 
 - [漏洞知识库](https://wiki.putdown.top/#/)
-
-- [steam打折信息](http://futalk.github.io/steam-discount/discount.html)
 
 - [GoogleHacking 搜索](http://futalk.github.io/GoogleHacking.github.io/)
 
