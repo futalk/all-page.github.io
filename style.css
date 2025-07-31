@@ -34,16 +34,21 @@ main {
   padding: 0 1.5rem;
 }
 
-h2 {
+/* 分类标题 */
+.category {
+  margin: 3.5rem 0;
+}
+
+.category h2 {
   font-size: 1.5rem;
   color: #333;
-  margin: 3rem 0 1.8rem;
+  margin-bottom: 0.8rem;
   font-weight: 600;
   position: relative;
   padding-left: 12px;
 }
 
-h2::before {
+.category h2::before {
   content: "";
   position: absolute;
   left: 0;
@@ -55,6 +60,14 @@ h2::before {
   transform: translateY(-50%);
 }
 
+.category .desc {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+  font-style: italic;
+}
+
+/* 项目网格 */
 .project-grid {
   display: grid;
   gap: 1.4rem;
@@ -82,9 +95,6 @@ h2::before {
   font-size: 1.2rem;
   color: #005fcc;
   margin-bottom: 0.6rem;
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 
 .project-card p {
@@ -93,8 +103,9 @@ h2::before {
   margin: 0;
 }
 
+/* 联系方式 */
 .about {
-  margin-top: 2.5rem;
+  margin-top: 3rem;
   padding: 2rem;
   background: #f9f9fb;
   border-radius: 12px;
@@ -136,6 +147,7 @@ h2::before {
   background: #004aa0;
 }
 
+/* 页脚说明 */
 .footer-note {
   margin-top: 2.5rem;
   text-align: center;
@@ -154,6 +166,7 @@ footer {
   border-top: 1px solid #eee;
 }
 
+/* 响应式 */
 @media (max-width: 600px) {
   header h1 {
     font-size: 2.2rem;
