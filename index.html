@@ -4,43 +4,73 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Putdown | 技术主站</title>
-  <meta name="description" content="网络安全研究员 Putdown 的技术门户 - 博客 | RSS | Wiki | 知识沉淀" />
+  <meta name="description" content="网络安全研究员 Putdown 的技术门户 - 博客 | 工具 | 知识管理" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>Putdown</h1>
-    <p>网络安全研究员 · 持续输出技术笔记与思考</p>
+    <p>网络安全研究员 · 内容输出 × 工具构建</p>
   </header>
 
   <main>
-    <section class="projects">
-      <h2>📌 我的数字工作台</h2>
+    <!-- 内容输出类 -->
+    <section class="category">
+      <h2>📚 内容输出</h2>
+      <p class="desc">记录思考、沉淀知识、持续分享。</p>
       <div class="project-grid">
         <a href="https://blog.putdown.me" target="_blank" class="project-card">
           <h3>📝 技术博客</h3>
-          <p>记录渗透测试、漏洞复现、安全工具使用心得。</p>
+          <p>渗透测试、漏洞分析、红队技巧实战记录。</p>
         </a>
 
         <a href="https://rss.putdown.me" target="_blank" class="project-card">
           <h3>📬 RSS 订阅</h3>
-          <p>订阅我的更新，用 Feedly 或其他阅读器保持同步。</p>
+          <p>订阅我的技术更新，保持同步。</p>
         </a>
 
         <a href="https://wiki.putdown.me" target="_blank" class="project-card">
           <h3>🧠 知识库（Wiki）</h3>
-          <p>结构化整理：红队 checklist、应急响应流程、内部笔记。</p>
+          <p>结构化整理：checklist、应急响应、内部笔记。</p>
         </a>
 
-        <a href="https://github.com/putdown" target="_blank" class="project-card">
-          <h3>🛠️ 开源项目</h3>
-          <p>CTF 解题脚本、自动化工具、安全研究代码仓库。</p>
+        <a href="https://notes.putdown.me" target="_blank" class="project-card">
+          <h3>📓 公开笔记</h3>
+          <p>使用 Notion/Obsidian 管理的学习与研究笔记。</p>
         </a>
       </div>
     </section>
 
+    <!-- 工具与服务类 -->
+    <section class="category">
+      <h2>🛠️ 工具与服务</h2>
+      <p class="desc">实用小工具，提升攻防效率。</p>
+      <div class="project-grid">
+        <a href="https://shell.putdown.me" target="_blank" class="project-card">
+          <h3>💥 反弹 Shell 生成器</h3>
+          <p>一键生成 Python/PowerShell/Bash 反弹命令，支持自定义 IP 和端口。</p>
+        </a>
+
+        <a href="https://mind.putdown.me" target="_blank" class="project-card">
+          <h3>🧩 在线脑图</h3>
+          <p>基于 Mermaid 的轻量级流程图与思维导图编辑器。</p>
+        </a>
+
+        <a href="https://encode.putdown.me" target="_blank" class="project-card">
+          <h3>🔐 编解码工具集</h3>
+          <p>Base64、URL、Hex、Unicode 快速编解码。</p>
+        </a>
+
+        <a href="https://ctf.putdown.me" target="_blank" class="project-card">
+          <h3>🏆 CTF 辅助工具</h3>
+          <p>常见编码转换、流量分析模板、密码学小工具。</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- 联系方式 -->
     <section class="about">
-      <h2>📬 联系方式</h2>
+      <h2>📬 联系我</h2>
       <ul>
         <li>📧 邮箱: <a href="mailto:me@putdown.me">me@putdown.me</a></li>
         <li>🐙 GitHub: <a href="https://github.com/putdown" target="_blank">github.com/putdown</a></li>
@@ -51,6 +81,7 @@
       </p>
     </section>
 
+    <!-- 页脚说明 -->
     <section class="footer-note">
       <p>此页面使用 <strong>GitHub Pages</strong> 托管，源码公开。<br>
       作为我在网络安全领域的技术入口与知识沉淀中心。</p>
