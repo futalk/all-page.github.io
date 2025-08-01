@@ -32,7 +32,7 @@ body.dark .project-card {
   border-color: #444;
 }
 
-body.dark .contact-row a {
+body.dark .contact-links a {
   color: #4da6ff;
 }
 
@@ -202,22 +202,56 @@ body.dark .tool-inline textarea {
   background: #004aa0;
 }
 
-/* 一行式联系方式 */
+/* 增强的一行式联系方式 */
 .contact-row {
   margin-top: 2.5rem;
   text-align: center;
   font-size: 0.95rem;
-  color: #555;
 }
 
-.contact-row a {
+.contact-links {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 0.6rem 1rem;
+  background: #f0f4f8;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  font-size: 0.95rem;
+}
+
+body.dark .contact-links {
+  background: #2a2a2a;
+  border-color: #444;
+}
+
+.contact-links a {
   color: #005fcc;
   text-decoration: none;
-  margin: 0 0.6em;
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  transition: color 0.2s;
 }
 
-.contact-row a:hover {
+.contact-links a:hover {
+  color: #004aa0;
   text-decoration: underline;
+}
+
+.sep {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 0;
+}
+
+body.dark .sep {
+  background: #555;
 }
 
 /* 小型按钮 */
@@ -228,7 +262,7 @@ body.dark .tool-inline textarea {
   color: white;
   border-radius: 4px;
   font-size: 0.95rem;
-  margin-left: 0.5em;
+  margin-left: 0;
 }
 
 .btn-small:hover {
@@ -278,5 +312,13 @@ body.dark footer {
   }
   main {
     padding: 0 1rem;
+  }
+  .contact-links {
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 0.8rem;
+  }
+  .sep {
+    display: none;
   }
 }
