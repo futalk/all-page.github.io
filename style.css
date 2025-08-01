@@ -9,6 +9,47 @@ body {
   background: #fff;
   color: #222;
   line-height: 1.7;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* 暗色模式 */
+body.dark {
+  background: #1a1a1a;
+  color: #e0e0e0;
+}
+
+body.dark header,
+body.dark .category h2,
+body.dark .desc,
+body.dark .contact-row,
+body.dark .footer-note,
+body.dark footer {
+  color: #e0e0e0;
+}
+
+body.dark .project-card {
+  background: #2a2a2a;
+  border-color: #444;
+}
+
+body.dark .contact-row a {
+  color: #4da6ff;
+}
+
+body.dark .btn-small {
+  background: #4da6ff;
+}
+
+body.dark .btn-small:hover {
+  background: #3c8ce7;
+}
+
+body.dark .footer-note,
+body.dark footer,
+body.dark .about,
+body.dark .project-card {
+  background: #2a2a2a;
+  border-color: #444;
 }
 
 header {
@@ -26,6 +67,26 @@ header p {
   color: #555;
   font-size: 1.1rem;
   margin-top: 0.5rem;
+}
+
+.dark-mode-toggle {
+  margin-top: 0.8rem;
+  padding: 0.4em 0.8em;
+  font-size: 0.9rem;
+  border: none;
+  background: #eee;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dark-mode-toggle:hover {
+  background: #ddd;
+}
+
+body.dark .dark-mode-toggle {
+  background: #555;
+  color: white;
 }
 
 main {
@@ -103,47 +164,74 @@ main {
   margin: 0;
 }
 
-/* 联系方式 */
-.about {
-  margin-top: 3rem;
-  padding: 2rem;
-  background: #f9f9fb;
-  border-radius: 12px;
-  border: 1px solid #eaeaea;
+/* 内联工具样式 */
+.tool-inline {
+  position: relative;
+  overflow: hidden;
 }
 
-.about ul {
-  list-style: none;
-  margin: 1rem 0;
-}
-
-.about li {
-  margin-bottom: 0.8rem;
+.tool-inline textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
   font-size: 0.95rem;
-  color: #444;
+  background: white;
+  color: #333;
 }
 
-.about a {
-  color: #005fcc;
-  text-decoration: none;
+body.dark .tool-inline textarea {
+  background: #333;
+  color: #e0e0e0;
+  border-color: #555;
 }
 
-.about a:hover {
-  text-decoration: underline;
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.6rem 1.2rem;
+.tool-inline button {
+  padding: 0.4rem 0.8rem;
+  margin-right: 0.5rem;
+  border: none;
   background: #005fcc;
   color: white;
   border-radius: 6px;
-  font-size: 0.95rem;
-  text-decoration: none;
-  transition: background 0.2s;
+  cursor: pointer;
+  font-size: 0.9rem;
 }
 
-.btn:hover {
+.tool-inline button:hover {
+  background: #004aa0;
+}
+
+/* 一行式联系方式 */
+.contact-row {
+  margin-top: 2.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.contact-row a {
+  color: #005fcc;
+  text-decoration: none;
+  margin: 0 0.6em;
+}
+
+.contact-row a:hover {
+  text-decoration: underline;
+}
+
+/* 小型按钮 */
+.btn-small {
+  display: inline;
+  padding: 0.2em 0.6em;
+  background: #005fcc;
+  color: white;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  margin-left: 0.5em;
+}
+
+.btn-small:hover {
   background: #004aa0;
 }
 
@@ -157,6 +245,15 @@ main {
   border-top: 1px solid #eee;
 }
 
+.footer-note a {
+  color: #005fcc;
+  text-decoration: none;
+}
+
+.footer-note a:hover {
+  text-decoration: underline;
+}
+
 footer {
   text-align: center;
   padding: 1.5rem;
@@ -164,6 +261,11 @@ footer {
   font-size: 0.9rem;
   background: #f9f9fb;
   border-top: 1px solid #eee;
+}
+
+body.dark footer {
+  background: #2a2a2a;
+  border-color: #444;
 }
 
 /* 响应式 */
