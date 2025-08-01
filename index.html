@@ -11,6 +11,7 @@
   <header>
     <h1>Putdown</h1>
     <p>网络安全研究员 · 内容输出 × 工具构建</p>
+    <button onclick="toggleDarkMode()" class="dark-mode-toggle">🌙 / ☀️</button>
   </header>
 
   <main>
@@ -19,22 +20,22 @@
       <h2>📚 内容输出</h2>
       <p class="desc">记录思考、沉淀知识、持续分享。</p>
       <div class="project-grid">
-        <a href="https://blog.putdown.top/" target="_blank" class="project-card">
+        <a href="https://blog.putdown.me" target="_blank" class="project-card">
           <h3>📝 技术博客</h3>
           <p>渗透测试、漏洞分析、红队技巧实战记录。</p>
         </a>
 
-        <a href="https://rss.putdown.top" target="_blank" class="project-card">
+        <a href="https://rss.putdown.me" target="_blank" class="project-card">
           <h3>📬 RSS 订阅</h3>
           <p>订阅我的技术更新，保持同步。</p>
         </a>
 
-        <a href="https://wk.putdown.top" target="_blank" class="project-card">
+        <a href="https://wiki.putdown.me" target="_blank" class="project-card">
           <h3>🧠 知识库（Wiki）</h3>
           <p>结构化整理：checklist、应急响应、内部笔记。</p>
         </a>
 
-        <a href="https://note.putdown.top" target="_blank" class="project-card">
+        <a href="https://notes.putdown.me" target="_blank" class="project-card">
           <h3>📓 公开笔记</h3>
           <p>使用 Notion/Obsidian 管理的学习与研究笔记。</p>
         </a>
@@ -61,30 +62,32 @@
           <p>Base64、URL、Hex、Unicode 快速编解码。</p>
         </a>
 
-        <a href="https://ctf.putdown.me" target="_blank" class="project-card">
-          <h3>🏆 CTF 辅助工具</h3>
-          <p>常见编码转换、流量分析模板、密码学小工具。</p>
-        </a>
+        <div class="project-card tool-inline">
+          <h3>🧮 Base64 编解码</h3>
+          <p>前端实现，安全可靠，无需上传数据。</p>
+          <textarea id="base64Input" placeholder="输入文本或 Base64..." rows="3"></textarea><br>
+          <button onclick="encode()">编码 → Base64</button>
+          <button onclick="decode()">← 解码 Base64</button>
+          <textarea id="base64Output" placeholder="结果" rows="3" readonly></textarea>
+        </div>
       </div>
     </section>
 
-    <!-- 联系方式 -->
-    <section class="about">
-      <h2>📬 联系我</h2>
-      <ul>
-        <li>📧 邮箱: <a href="mailto:me@putdown.me">me@putdown.me</a></li>
-        <li>🐙 GitHub: <a href="https://github.com/putdown" target="_blank">github.com/putdown</a></li>
-        <li>🐦 Twitter(X): <a href="https://x.com/putdown" target="_blank">@putdown</a></li>
-      </ul>
-      <p style="margin-top: 1rem;">
-        <a href="resume.pdf" target="_blank" class="btn">下载简历 PDF</a>
+    <!-- 联系方式（一行式） -->
+    <section class="contact-row">
+      <p>
+        📧 <a href="mailto:me@putdown.me">me@putdown.me</a> |
+        🐙 <a href="https://github.com/putdown" target="_blank">GitHub</a> |
+        🐦 <a href="https://x.com/putdown" target="_blank">X (Twitter)</a> |
+        <a href="resume.pdf" target="_blank" class="btn-small">简历</a>
       </p>
     </section>
 
     <!-- 页脚说明 -->
     <section class="footer-note">
       <p>此页面使用 <strong>GitHub Pages</strong> 托管，源码公开。<br>
-      作为我在网络安全领域的技术入口与知识沉淀中心。</p>
+      作为我在网络安全领域的技术入口与知识沉淀中心。<br>
+      <small>统计由 <a href="https://usefathom.com" target="_blank">Fathom</a> 提供（无追踪）</small></p>
     </section>
   </main>
 
@@ -92,6 +95,34 @@
     &copy; 2025 Putdown. 主站托管于 GitHub Pages.
   </footer>
 
-  <script src="script.js"></script>
+  <!-- 暗色模式切换脚本 -->
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+      localStorage.setItem('dark-mode', document.body.classList.contains('dark'));
+    }
+
+    // 恢复上次模式
+    if (localStorage.getItem('dark-mode') === 'true') {
+      document.body.classList.add('dark');
+    }
+
+    // Base64 编解码
+    function encode() {
+      const input = document.getElementById('base64Input').value;
+      document.getElementById('base64Output').value = btoa(unescape(encodeURIComponent(input)));
+    }
+    function decode() {
+      const input = document.getElementById('base64Input').value;
+      try {
+        document.getElementById('base64Output').value = decodeURIComponent(escape(atob(input)));
+      } catch (e) {
+        document.getElementById('base64Output').value = '解码失败：非 Base64 或编码错误';
+      }
+    }
+  </script>
+
+  <!-- 匿名统计：Fathom（替换 ABC12345 为你的站点 ID） -->
+  <script src="https://cdn.usefathom.com/script.js" data-site="ABC12345" defer></script>
 </body>
 </html>
