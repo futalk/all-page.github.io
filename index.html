@@ -20,22 +20,22 @@
       <h2>📚 内容输出</h2>
       <p class="desc">记录思考、沉淀知识、持续分享。</p>
       <div class="project-grid">
-        <a href="https://blog.putdown.me" target="_blank" class="project-card">
+        <a href="https://blog.putdown.top" target="_blank" class="project-card">
           <h3>📝 技术博客</h3>
           <p>渗透测试、漏洞分析、红队技巧实战记录。</p>
         </a>
 
-        <a href="https://rss.putdown.me" target="_blank" class="project-card">
+        <a href="https://rss.putdown.top" target="_blank" class="project-card">
           <h3>📬 RSS 订阅</h3>
           <p>订阅我的技术更新，保持同步。</p>
         </a>
 
-        <a href="https://wiki.putdown.me" target="_blank" class="project-card">
+        <a href="https://wiki.putdown.top" target="_blank" class="project-card">
           <h3>🧠 知识库（Wiki）</h3>
           <p>结构化整理：checklist、应急响应、内部笔记。</p>
         </a>
 
-        <a href="https://notes.putdown.me" target="_blank" class="project-card">
+        <a href="https://notes.putdown.top" target="_blank" class="project-card">
           <h3>📓 公开笔记</h3>
           <p>使用 Notion/Obsidian 管理的学习与研究笔记。</p>
         </a>
@@ -47,17 +47,17 @@
       <h2>🛠️ 工具与服务</h2>
       <p class="desc">实用小工具，提升攻防效率。</p>
       <div class="project-grid">
-        <a href="https://shell.putdown.me" target="_blank" class="project-card">
+        <a href="https://shell.putdown.top" target="_blank" class="project-card">
           <h3>💥 反弹 Shell 生成器</h3>
           <p>一键生成 Python/PowerShell/Bash 反弹命令，支持自定义 IP 和端口。</p>
         </a>
 
-        <a href="https://mind.putdown.me" target="_blank" class="project-card">
+        <a href="https://mind.putdown.top" target="_blank" class="project-card">
           <h3>🧩 在线脑图</h3>
           <p>基于 Mermaid 的轻量级流程图与思维导图编辑器。</p>
         </a>
 
-        <a href="https://encode.putdown.me" target="_blank" class="project-card">
+        <a href="https://encode.putdown.top" target="_blank" class="project-card">
           <h3>🔐 编解码工具集</h3>
           <p>Base64、URL、Hex、Unicode 快速编解码。</p>
         </a>
@@ -73,14 +73,17 @@
       </div>
     </section>
 
-    <!-- 联系方式（一行式） -->
+    <!-- 联系方式（增强样式的一行式） -->
     <section class="contact-row">
-      <p>
-        📧 <a href="mailto:me@putdown.me">me@putdown.me</a> |
-        🐙 <a href="https://github.com/putdown" target="_blank">GitHub</a> |
-        🐦 <a href="https://x.com/putdown" target="_blank">X (Twitter)</a> |
-        <a href="resume.pdf" target="_blank" class="btn-small">简历</a>
-      </p>
+      <div class="contact-links">
+        <a href="mailto:me@putdown.top">📧 me@putdown.top</a>
+        <span class="sep"></span>
+        <a href="https://github.com/putdown" target="_blank">🐙 GitHub</a>
+        <span class="sep"></span>
+        <a href="https://x.com/putdown" target="_blank">🐦 X (Twitter)</a>
+        <span class="sep"></span>
+        <a href="resume.pdf" target="_blank" class="btn-small">📄 简历</a>
+      </div>
     </section>
 
     <!-- 页脚说明 -->
@@ -95,23 +98,26 @@
     &copy; 2025 Putdown. 主站托管于 GitHub Pages.
   </footer>
 
-  <!-- 暗色模式切换脚本 -->
+  <!-- 暗色模式与工具脚本 -->
   <script>
     function toggleDarkMode() {
       document.body.classList.toggle('dark');
       localStorage.setItem('dark-mode', document.body.classList.contains('dark'));
     }
 
-    // 恢复上次模式
     if (localStorage.getItem('dark-mode') === 'true') {
       document.body.classList.add('dark');
     }
 
-    // Base64 编解码
     function encode() {
       const input = document.getElementById('base64Input').value;
-      document.getElementById('base64Output').value = btoa(unescape(encodeURIComponent(input)));
+      try {
+        document.getElementById('base64Output').value = btoa(unescape(encodeURIComponent(input)));
+      } catch (e) {
+        document.getElementById('base64Output').value = '编码失败';
+      }
     }
+
     function decode() {
       const input = document.getElementById('base64Input').value;
       try {
@@ -122,7 +128,7 @@
     }
   </script>
 
-  <!-- 匿名统计：Fathom（替换 ABC12345 为你的站点 ID） -->
+  <!-- Fathom 统计（替换 ABC12345 为你的站点 ID） -->
   <script src="https://cdn.usefathom.com/script.js" data-site="ABC12345" defer></script>
 </body>
 </html>
